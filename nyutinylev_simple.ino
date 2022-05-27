@@ -108,7 +108,7 @@ void setup(void) {
   Serial.print("\nNYU TinyLev Driver");
   analogWriteRes(PWMRES); // write PWM resolution
   Serial.print("\nbefore initialization:");
-  s     howFlexPWMInit();
+  showFlexPWMInit();
   setFreq(FREQUENCY);      // set the signal frequency
   setAmp(PWMSTEPS/2 - 1); // set PWM amplitude to 50% duty cycle
   Serial.print("\nafter initialization:");
